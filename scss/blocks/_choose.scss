@@ -62,38 +62,6 @@
     }
 }
 
-@include breakpoint-down(768px) {
-    .choose {
-        &__content {
-            display: block;
-        }
-
-        &__img {
-            width: 610px;
-            height: 650px;
-            margin-bottom: 10px;
-        }
-
-        &__image {
-            width: 300px;
-            height: 300px;
-        }
-
-        &__imgee {
-            display: none;
-        }
-
-        &__imagee {
-            width: 300px;
-            height: 300px;
-            display: block;
-        }
-
-        &__absolute {
-            display: none;
-        }
-    }
-}
 
 @include breakpoint-down(425px) {
     .choose {
