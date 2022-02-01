@@ -1,0 +1,301 @@
+.intro {
+    position: relative;
+    margin-bottom: 32px;
+    padding-top: 80px;
+
+    &__container {
+        display: flex;
+    }
+
+    &__images {
+        z-index: 2;
+        position: absolute;
+        top: 14%;
+        transform: translateX(80%);
+    }
+
+    &__img {
+        margin-bottom: 7px;
+    }
+
+    &__content {
+        padding: 35px;
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    &__span {
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 0.04em;
+        color: #828282;
+    }
+
+    &__star {
+        display: flex;
+        padding-bottom: 46px;
+    }
+
+    &__stars {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    &__cost {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 24px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #333333;
+    }
+
+    &__mini {
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.04em;
+        color: #828282;
+        text-decoration-line: line-through;
+    }
+
+    &__sales {
+        display: flex;
+    }
+
+    &__sale {
+        border: 1px solid #000;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-right: 10px;
+        margin-bottom: 40px;
+    }
+
+    &__select {
+        width: 300px;
+        height: 44px;
+    }
+
+    &__text {
+        letter-spacing: 0.04em;
+        text-decoration-line: underline;
+        margin-bottom: 40px;
+    }
+
+    &__size {
+        display: flex;
+        text-align: center;
+        margin-bottom: 12px;
+    }
+
+    &__btn-plus {
+        width: 40px;
+        height: 44px;
+        background-color: white;
+        border: none;
+        background-color: rgb(245, 244, 244);
+        transition: 0.3 ease;
+
+        &:hover {
+            opacity: 0.8;
+            cursor: pointer;
+        }
+    }
+
+    &__btn-minus {
+        width: 40px;
+        height: 44px;
+        background-color: rgb(245, 244, 244);
+        border: none;
+        margin-right: 12px;
+        transition: 0.3 ease;
+
+        &:hover {
+            opacity: 0.8;
+            cursor: pointer;
+        }
+    }
+
+    &__number {
+        width: 40px;
+        height: 44px;
+        padding: 8px;
+        padding-top: 12px;
+        background-color: rgb(245, 244, 244);
+    }
+
+    &__btn--black {
+        width: 200px;
+        height: 44px;
+        color: white;
+        background-color: rgb(52, 50, 50);
+        margin-right: 4px;
+        transition: 0.3 ease;
+
+        &:hover {
+            opacity: 0.8;
+            cursor: pointer;
+        }
+    }
+
+    &__btn-heart {
+        border: none;
+        transition: 0.3 ease;
+
+        &:hover {
+            opacity: 0.8;
+            cursor: pointer;
+        }
+    }
+
+    &__click {
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.04em;
+        text-decoration-line: underline;
+        color: #333333;
+        margin-bottom: 30px;
+    }
+
+    &__btnn {
+        display: inline;
+        margin-right: 10px;
+        margin-top: 20px;
+    }
+
+    &__item {
+        text-decoration: underline;
+        transition: 0.3 ease;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+}
+
+@include breakpoint-down(425px) {
+    .intro {
+        position: relative;
+        margin-bottom: 57px;
+        padding-top: 60px;
+
+        &__container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        &__image {
+            width: 375px;
+            height: 479px;
+        }
+
+        &__images {
+            z-index: 2;
+            position: absolute;
+            top: 7.5%;
+            transform: translateX(80%);
+        }
+
+        &__img {
+            width: 40px;
+            height: 52px;
+            margin-bottom: 3px;
+        }
+
+        &__content {
+            padding: 15px 0;
+        }
+
+        &__title {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        &__star {
+            padding-bottom: 24px;
+        }
+
+        &__stars {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        &__cost {
+            font-size: 18px;
+        }
+
+        &__mini {
+            font-size: 12px;
+        }
+
+        &__sales {
+            display: flex;
+        }
+
+        &__sale {
+            margin-right: 8px;
+            margin-bottom: 25px;
+        }
+
+        &__select {
+            width: 300px;
+            height: 32px;
+        }
+
+        &__text {
+            letter-spacing: 0.04em;
+            text-decoration-line: underline;
+            margin-bottom: 25px;
+        }
+
+        &__size {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 12px;
+        }
+
+        &__btn-plus {
+            width: 45px;
+            height: 34px;
+        }
+
+        &__btn-minus {
+            width: 45px;
+            height: 34px;
+        }
+
+        &__number {
+            width: 45px;
+            height: 34px;
+            padding: 8px;
+            padding-top: 7px;
+        }
+
+        &__btn--black {
+            height: 30px;
+            margin-right: 2px;
+            margin-top: 8px;
+        }
+
+        &__black {
+            width: 30px;
+            height: 30px;
+        }
+
+        &__btn-heart {
+            margin-top: 8px;
+        }
+
+        &__click {
+            margin-bottom: 20px;
+        }
+
+        &__btnn {
+            margin-top: 10px;
+        }
+    }
+}

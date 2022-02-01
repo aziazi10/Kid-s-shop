@@ -1,0 +1,139 @@
+.choose {
+    &__title {
+        text-align: center;
+        letter-spacing: 0.04em;
+        text-decoration-line: underline;
+        color: #333333;
+        padding-bottom: 24px;
+    }
+
+    &__content {
+        position: relative;
+        display: flex;
+        gap: 10px;
+    }
+
+    &__item {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    &__imagee {
+        display: none;
+    }
+
+    &__absolute {
+        position: absolute;
+        padding: 20px;
+        top: 350px;
+        width: 310px;
+        height: 336px;
+    }
+
+    &__absolute-copy {
+        margin-left: 250px;
+    }
+
+    &__absolute-pkt {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 80px;
+        margin-bottom: 5px;
+    }
+
+    &__absolute-text {
+        color: white;
+        text-align: center;
+        letter-spacing: 0.04em;
+    }
+
+    &__absolute-item {
+        display: flex;
+        margin-top: 120px;
+        margin-left: 110px;
+    }
+
+    &__absolute-like {
+        color: white;
+        text-align: center;
+        letter-spacing: 0.04em;
+        margin-left: 5px;
+    }
+}
+
+@include breakpoint-down(768px) {
+    .choose {
+        &__content {
+            display: block;
+        }
+
+        &__img {
+            width: 610px;
+            height: 650px;
+            margin-bottom: 10px;
+        }
+
+        &__image {
+            width: 300px;
+            height: 300px;
+        }
+
+        &__imgee {
+            display: none;
+        }
+
+        &__imagee {
+            width: 300px;
+            height: 300px;
+            display: block;
+        }
+
+        &__absolute {
+            display: none;
+        }
+    }
+}
+
+@include breakpoint-down(425px) {
+    .choose {
+        &__title {
+            text-align: center;
+            padding-bottom: 10px;
+            font-size: 10px;
+            line-height: 20px;
+            letter-spacing: 0.04em;
+        }
+
+        &__content {
+            display: block;
+        }
+
+        &__item {
+            gap: 3px;
+        }
+
+        &__img {
+            width: 325px;
+            height: 325px;
+            margin-bottom: 3px;
+        }
+
+        &__image {
+            width: 150px;
+            height: 150px;
+        }
+
+        &__imgee {
+            display: none;
+        }
+
+        &__imagee {
+            display: block;
+        }
+
+        &__absolute {
+            display: none;
+        }
+    }
+}
