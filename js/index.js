@@ -36,9 +36,14 @@ plusBtn.addEventListener("click", function (evt) {
     let addedCloses = btnNmb.textContent = ++numb
 })
 
-minusBtn.addEventListener("click", function () {
-    let removedCloses = --numb
-    btnNmb.textContent = removedCloses
+minusBtn.addEventListener("click", function remove() {
+        if (numb <= 0) {
+            return
+        } else {
+            let removedCloses = --numb
+    
+            btnNmb.textContent = removedCloses;
+        }
 })
 
 
