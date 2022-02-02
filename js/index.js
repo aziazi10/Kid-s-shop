@@ -36,7 +36,7 @@ plusBtn.addEventListener("click", function (evt) {
     let addedCloses = btnNmb.textContent = ++numb
 })
 
-minusBtn.addEventListener("click", function remove() {
+minusBtn.addEventListener("click", function () {
         if (numb <= 0) {
             return
         } else {
