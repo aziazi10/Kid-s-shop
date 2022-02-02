@@ -32,6 +32,7 @@ likeBtn.addEventListener("click", function () {
 
 // Кийимлар сонини кошиш ва айириш
 let numb = 1
+
 plusBtn.addEventListener("click", function (evt) {
     let addedCloses = btnNmb.textContent = ++numb
 })
